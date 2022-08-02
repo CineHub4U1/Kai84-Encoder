@@ -16,14 +16,14 @@
 from decouple import config
 
 try:
-    APP_ID = config("APP_ID", cast=int)
-    API_HASH = config("API_HASH")
-    BOT_TOKEN = config("BOT_TOKEN")
+    APP_ID = "7405235"
+    API_HASH = "5c9541eefe8452186e9649e2effc1f3f"
+    BOT_TOKEN = 5534205730:AAGqKRKCrvmG_T37Q-jNUMDHZqmxQc0QYeg"
     DEV = 1322549723
-    OWNER = config("OWNER")
+    OWNER = "1164918935"
     FFMPEG = config(
         "FFMPEG",
-        default='ffmpeg -i "{}" -preset ultrafast -c:v libx265 -crf 27 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? "{}"',
+        default='ffmpeg -i '''{}''' -hide_banner -preset fast -c:v libx265 -vf scale=1280:-2 -x265-params no-info=1 -pix_fmt yuv420p10le -crf 24 -r 23.976 -map 0:v -c:a libopus -b:a 128k -ac 6 -vbr on -map 0:a -c:s copy -map 0:s? '''{}''' -y',
     )
     THUMB = config(
         "THUMBNAIL", default="https://telegra.ph/file/75ee20ec8d8c8bba84f02.jpg"
