@@ -16,8 +16,8 @@
 from decouple import config
 
 try:
-    APP_ID = "7405235"
-    API_HASH = "5c9541eefe8452186e9649e2effc1f3f"
+    APP_ID = "75"
+    API_HASH = "5c9541eefe845"
     BOT_TOKEN = 5534205730:AAGqKRKCrvmG_T37Q-jNUMDHZqmxQc0QYeg"
     DEV = 1322549723
     OWNER = "1164918935"
